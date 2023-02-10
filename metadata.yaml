@@ -1,0 +1,21 @@
+composer:
+  last: Tůma
+  first: František Ignác Antonín
+title: Regis superni nuntia
+subtitle: Inno Per Il Festo di S:ta Teresia
+genre: motet
+scoring: A (solo), trb, 2 vl, b, org
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: A-Wn
+    shelfmark: Mus.Hs.15681
+    date: 1741
+    rism: 600138880
+    url: https://data.onb.ac.at/rec/AC14297580
+    license: public domain
+    principal: true
+    notes: parts for A solo, trb, vl 1, vl 2, vlc, org, and maestro di cappella
+imslp:
+parts:
+  A_solo: Alto solo
