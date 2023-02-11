@@ -6,18 +6,18 @@
 \paper {
   system-system-spacing.basic-distance = #30
   system-system-spacing.minimum-distance = #30
-  % systems-per-page = #2
+  systems-per-page = #2
 }
 
 \book {
   \bookpart {
     \section "Regis superni nuntia"
-    % \addTocEntry
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Trombone"
+          \set Staff.instrumentName = \markup \center-column { "Trombone" "solo" }
           \RegisTrombone
         }
         \new StaffGroup <<
@@ -35,7 +35,7 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \incipitAlto
+            \incipit \markup \center-column { "Alto" "solo" } "alto" #-15.8 #-2.8
             \new Voice = "Alto" { \dynamicUp \RegisAlto }
           }
           \new Lyrics \lyricsto Alto \RegisAltoLyrics
@@ -50,7 +50,7 @@
         \new FiguredBass { \RegisBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 60 } % 4. = 60
     }
   }
 }
